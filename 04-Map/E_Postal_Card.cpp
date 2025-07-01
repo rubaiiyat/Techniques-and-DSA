@@ -8,19 +8,12 @@ int main()
     cin>>n>>m;
 
     vector <string> v;
-    while (n--)
+    for (int i=0;i<n;i++)
     {
         string s;
         cin>>s;
 
-        string s2;
-        for (int i = 3; i < 6; i++)
-        {
-            s2+=s[i];
-        }
-
-        v.push_back(s2);
-        s2="";
+        v.push_back(s.substr(3,3));
         
     }
 
@@ -29,7 +22,7 @@ int main()
     {   
         string s;
         cin>>s;
-        for (int i = 0; i < v.size(); i++)
+        for (int i = 0; i < n; i++)
         {
             if (s==v[i])
             {
