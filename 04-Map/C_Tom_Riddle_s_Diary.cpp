@@ -1,53 +1,29 @@
 #include <bits/stdc++.h>
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 using namespace std;
 
 int main()
 {
+    optimize();
+
 
     int n;
     cin>>n;
 
-    vector <string> v;
-
+    map <string, bool> mp;
     while (n--)
     {
         string s;
         cin>>s;
-        v.push_back(s);
-    }
 
-    int l=v.size();
-    reverse(v.begin(),v.end());
+        if(mp[s]==1) cout<<"YES"<<endl; else cout<<"NO"<<endl;
 
-    vector <string> ans;
-    for (int i = 0; i < l; i++)
-    {   
-        bool fnd=false;
-        for (int j = i+1; j < l; j++)
-        {
-            if (v[i]==v[j])
-            {
-                fnd=true;
-                break;
-            }
-            
-        }
-
-        if(fnd){
-            ans.push_back("YES");
-        }else{
-            ans.push_back("NO");
-        }
+        mp[s]=1;
         
     }
-
-    reverse(ans.begin(),ans.end());
-
-    for (auto it:ans) cout<<it<<endl;
-
-
-   
     
+
+
     
     return 0;
 }
