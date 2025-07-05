@@ -9,48 +9,34 @@ int main()
 
     int t;
     cin>>t;
+
     set <int> st;
 
-    int p1;
-    cin>>p1;
-    while (p1--)
+    int p;
+    cin>>p;
+
+    while (p--)
     {
         int n;
         cin>>n;
         st.insert(n);
+
     }
 
-    int p2;
-    cin>>p2;
-    while (p2--)
+    int q;
+    cin>>q;
+
+    while (q--)
     {
         int n;
         cin>>n;
         st.insert(n);
+
     }
-    
-    
+
+    if(st.size()==t) cout<<"I become the guy."<<endl;else cout<<"Oh, my keyboard!"<<endl;
     
 
-    bool found=true;
-
-    for (int i = 1; i <= t; i++)
-    {
-        if(st.find(i)==st.end()){
-            found=false;
-            break;
-        }
-        
-    }
-    
-    
-    if (found) 
-    {
-        cout<<"I become the guy."<<endl;
-    }else{
-        cout<<"Oh, my keyboard!"<<endl;
-    }
-    
 
     
     return 0;
