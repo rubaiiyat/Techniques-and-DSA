@@ -5,6 +5,7 @@
 using namespace std;
 
 vector <int> v;
+
 void merge_sort(int l1, int r1, int l2, int r2){
     int i1=l1, i2=l2;
     vector <int> m;
@@ -28,6 +29,7 @@ void merge_sort(int l1, int r1, int l2, int r2){
     for(int i=0,j=l1;i<m.size();i++,j++){
         v[j]=m[i];
     }
+
     
 }
 void merge(int l, int r){
