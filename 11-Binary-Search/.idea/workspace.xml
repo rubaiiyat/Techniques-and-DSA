@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="868cae0c-d470-47ac-a660-2cee30ac8d64" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../03-Greedy/.cph/.A_Common_Multiple.cpp_238597dc5e61fd9fd528fe3d0a62cbc8.prob" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Greedy/.cph/.A_Common_Multiple.cpp_238597dc5e61fd9fd528fe3d0a62cbc8.prob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-Merge-Sort/.cph/.Merge_Sort.cpp_940c24a46c9a4beec58ae6938d5fd0ad.prob" beforeDir="false" afterPath="$PROJECT_DIR$/../10-Merge-Sort/.cph/.Merge_Sort.cpp_940c24a46c9a4beec58ae6938d5fd0ad.prob" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="37HpoOOnoIIMHuMjrNjGujYdNqH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="868cae0c-d470-47ac-a660-2cee30ac8d64" name="Changes" comment="" />
+      <created>1766570025726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766570025726</updated>
+      <workItem from="1766570027306" duration="3000" />
+    </task>
+    <servers />
+  </component>
+</project>
