@@ -3,68 +3,92 @@
 #define endl "\n"
 #define ll long long
 using namespace std;
-vector <int> v;
-int cnt=0;
-void merge_sort(int l1, int r1, int l2, int r2){
-    int i1=l1, i2=l2;
-    vector <int> temp;
-    while (i1<=r1 || i2<=r2)
+
+void merge(int arr[], int l,int m, int r){
+    int left=(m-l)+1;
+    int right=r-m;
+
+    int L[left],R[right];
+
+    int k=0;
+    for (int i = l; i <=m ; i++)
     {
-        if(i1>r1){
-            temp.push_back(v[i2]);
-            i2++;
-            cnt++;
-        }else if(i2>r2){
-            temp.push_back(v[i1]);
-            i1++;
-            cnt++;
-        }else if(v[i1]<=v[i2]){
-            temp.push_back(v[i1]);
-            cnt++;
-            i1++;
-        }else{
-            temp.push_back(v[i2]);
-            i2++;
-            cnt++;
-        }
+        L[k]=arr[i];
+        k++;
+    }
+    k=0;
+    for (int i = m+1; i <=r ; i++)
+    {
+        R[k]=arr[i];
+        k++;
     }
 
-    for(int i=0, j=l1; i<temp.size();i++,j++){
-        v[j]=temp[i];
+    int cur=l;
+    int i=0,j=0;
+
+    while (i<left && j<right)
+    {
+        if(L[i]<=R[j]){
+            arr[cur]=L[i];
+            i++;
+        }else{
+            arr[cur]=R[j];
+            j++;
+        }
+        cur++;
     }
+    
+    while (i<left)
+    {
+        arr[cur]=L[i];
+        i++;
+        cur++;
+    }
+    while (j<right)
+    {
+        arr[cur]=R[j];
+        j++;
+        cur++;
+    }
+    
     
 }
 
-void merge(int l, int r){
-    if(l>=r) return;
-    int mid=(l+r)/2;
-    merge(l,mid);
-    merge(mid+1,r);
+void divide(int arr[],int l,int r){
+    /* for (int i = l; i <= r; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl; */
 
-    merge_sort(l,mid,mid+1,r);
+    if(l<r){
+        int mid=(l+r)/2;
+        divide(arr,l,mid);
+        divide(arr,mid+1,r);
+        merge(arr, l,mid,r);
+    }
+    
 }
 
 int main()
 {
     optimize();
+
     int n;cin>>n;
-    
+    int arr[n];
     for (int i = 0; i < n; i++)
     {
-        int x; cin>>x;
-        v.push_back(x);
+        cin>>arr[i];
     }
     
-
-    merge(0,n-1);
-
+    divide(arr,0,n-1);
     for (int i = 0; i < n; i++)
     {
-        cout<<v[i];
-        if(i!=n-1) cout<<" ";
+        cout<<arr[i]<<" ";
     }
     cout<<endl;
-    cout<<cnt<<endl;
+
+
     
     return 0;
 }
