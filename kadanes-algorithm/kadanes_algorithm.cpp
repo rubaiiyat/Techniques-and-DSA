@@ -15,14 +15,14 @@ int main()
         cin>>v[i];
     }
 
-    int cur=0;
-    int mx=0;
+    int cur=v[0];
+    int mx=v[0];
 
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
-        cur+=v[i];
+        cur=max(v[i],cur+v[i]);
         mx=max(mx,cur);
-        if(cur<0) cur=0;
+        
     }
     
     cout<<mx<<endl;
